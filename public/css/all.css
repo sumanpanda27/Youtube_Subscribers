@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h3,
+h4 {
+  text-align: center;
+  color: rgb(243, 243, 243);
+}
+
+h4 {
+  text-align: center;
+  margin: 1.5em;
+  color: rgb(195, 201, 206);
+}
+
+ul.list-group {
+  /* margin-top: 1em; */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 30px;
+}
+
+.list-group-item {
+  background-color: hsl(207, 66%, 92%);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+img {
+  height: 12vh;
+  width: auto;
+  border-radius: 10%;
+  margin-left: 30px;
+}
+
+.routes {
+  background-color: rgb(133, 104, 146);
+  color: navy;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid red;
+}

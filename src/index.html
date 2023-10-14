@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap stylesheet included below -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <title>Youtube Subscribers</title>
+  </head>
+
+  <body>
+    <div class="container-flud">
+      <h1>
+        <img
+          src="https://png.pngtree.com/png-clipart/20221018/ourmid/pngtree-youtube-social-media-3d-stereo-png-image_6308427.png"
+          alt="YouTube Logo"
+        />
+        <u>Welcome to the Youtube Subscribers fetch homepage.</u>
+      </h1>
+      <h4>
+        The API provided by this application contains the URL as following
+        below:
+      </h4>
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          BASE URL:<a
+            class="routes"
+            href="http://localhost:3000
+
+          "
+            >Home</a
+          >
+          in URL : http://localhost:3000
+        </li>
+        <li class="list-group-item">
+          GET METHOD:<a class="routes" href="/subscribers">/subscribers</a>
+          returns an array of subscribers present in the database.
+        </li>
+        <li class="list-group-item">
+          GET METHOD:<a class="routes" href="/subscribers/names"
+            >/subscribers/names</a
+          >
+          returns an array of subscribers with only two fields (name &amp;
+          subscribedChannel).
+        </li>
+        <li class="list-group-item">
+          GET METHOD:<a
+            class="routes"
+            href="/subscribers/652a76cda4400381906578ce"
+            >/subscribers/:id</a
+          >
+          URL Provides the details of a subscriber with the given ID.(Default id
+          is 652a76cda4400381906578ce)
+        </li>
+        <h3 class="list-group-item">
+          You can also type "ID" manually in URL to get the details of stored id
+          details
+        </h3>
+      </ul>
+    </div>
+
+    <!-- bootstrap script included below -->
+    <script src="/src/public/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
