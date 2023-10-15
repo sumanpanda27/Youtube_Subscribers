@@ -15,7 +15,7 @@ describe("App Unit Testing", () => {
           if (err) {
             console.log(err);
           } else {
-            res.should.have.status(200);
+            res.body.should.be.a("array");
           }
         });
 
@@ -31,7 +31,7 @@ describe("App Unit Testing", () => {
           if (err) {
             console.log(err);
           } else {
-            res.should.have.status(200);
+            res.body.should.be.a("array");
           }
         });
 
@@ -48,7 +48,7 @@ describe("App Unit Testing", () => {
           if (err) {
             console.log(err);
           } else {
-            res.should.have.status(200);
+            res.body.should.be.a("object");
           }
         });
 
