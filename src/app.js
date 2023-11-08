@@ -48,18 +48,23 @@ app.get("/subscribers/names", async (req, res, next) => {
 app.get("/subscribers/:id", async (req, res) => {
   try {
     const id = req.params.id; // Extract the ID parameter from the request URL
+    console.log(id);
     if (!id) {
       res.status(400).json({ message: "No ID provided" }); // Send a JSON response with a status of 400 (Bad Request)
       return;
     }
     const subscriber = await schema.findById(id); // Find a subscriber with the given ID in the schema/model
+    console.log(subscriber);
     if (!subscriber) {
       res.status(404).json({ message: "Subscriber not found" }); // Send a JSON response with a status of 404 (Not Found)
       return;
     }
     res.send(subscriber); // Send the subscriber details as the response
   } catch (error) {
-    res.status(400).json({ message: error.message }); // Send a JSON response with a status of 400 (Bad Request) and the error message
+    const id = req.params.id;
+    res
+      .status(400)
+      .json({ message: `Subscriber doesn't exist with the given _id:${id}` }); // Send a JSON response with a status of 400 (Bad Request) and the error message
   }
 });
 
